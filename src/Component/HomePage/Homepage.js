@@ -4,7 +4,7 @@ import NavBar from '../NavBar/NavBar';
 
 const Homepage = () => {
     return (
-        <div>
+        <div className='bg-[#f0f2f5]'>
             <NavBar></NavBar>
             <LeftSideContent></LeftSideContent>
         </div>
