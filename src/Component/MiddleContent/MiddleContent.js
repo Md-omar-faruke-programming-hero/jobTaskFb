@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import spiderMan from "../../images/spiderman.jpg";
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import { FaPhotoVideo } from "react-icons/fa";
 import { BsEmojiLaughing } from "react-icons/bs";
 import { BsThreeDots } from "react-icons/bs";
 import { RiEarthFill } from "react-icons/ri";
+import { BsHeartFill } from "react-icons/bs";
+import { MdThumbUpAlt } from "react-icons/md";
+import { BsHandThumbsUp } from "react-icons/bs";
+import { BiComment } from "react-icons/bi";
+import { RiShareForwardLine } from "react-icons/ri";
+import { BsHandThumbsUpFill } from "react-icons/bs";
 
 const MiddleContent = () => {
+  // like button function
+  const [like, setLike] = useState(false);
   return (
     <div className="flex justify-center bg-[#f0f2f5] py-[50px]">
       <div>
@@ -63,15 +71,63 @@ const MiddleContent = () => {
                 <BsThreeDots></BsThreeDots>
               </button>
             </div>
+            <p className="my-[10px]">welcome....</p>
           </div>
           <div className="cursor-pointer">
             <img src={spiderMan} className="w-full h-full" alt="" />
           </div>
-          <div>
-            <div>
-
+          <div className="px-[20px]">
+            <div className="flex items-center justify-between  ">
+              <div className="flex items-center my-[8px]">
+                <div className="flex items-center mr-[3px]">
+                  <div className="  bol  p-[5px] flex justify-center items-center w-[20px] h-[20px] bg-red-600 rounded-[100px]">
+                    <BsHeartFill className="text-white     "></BsHeartFill>
+                  </div>
+                  {like ? (
+                    <div className="border-[2px] border-solid border-white ml-[-3px]  p-[2px] flex justify-center items-center w-[20px] h-[20px] bg-[#0882ea] rounded-[100px]">
+                      <MdThumbUpAlt className="text-white     "></MdThumbUpAlt>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
+                {like ? <div>You and 12 others</div> : <div> 12 </div>}
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <p className="mr-[8px]">123 coments</p>
+                  <p>2 shares</p>
+                </div>
+              </div>
             </div>
-            <div></div>
+
+            <hr className="by-[5px]" />
+            <div className="grid md:grid-cols-3 gap-0 py-[3px]">
+              <button
+                onClick={() => setLike(!like)}
+                className="flex items-center px-[40px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px] mx-[auto]"
+              >
+                {like ? (
+                  <>
+                    <BsHandThumbsUpFill className="w-[24px] h-[24px] mr-[5px] text-[#2078f4]"></BsHandThumbsUpFill>
+                    <p className="text-[15px] font-semibold text-[#2078f4]">Like</p>
+                  </>
+                ) : (
+                  <>
+                    <BsHandThumbsUp className="w-[24px] h-[24px] mr-[5px] text-[#606770]"></BsHandThumbsUp>
+                    <p className="text-[15px] font-semibold text-[#606770]">Like</p>
+                  </>
+                )}
+              </button>
+              <button className="flex items-center px-[30px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px] mx-[auto]">
+                <BiComment className="w-[24px] h-[24px] mr-[5px] text-[#606770]"></BiComment>
+                <p className="text-[15px] font-semibold text-[#606770]">Comment</p>
+              </button>
+              <button className="flex items-center px-[20px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px] mx-[auto]">
+                <RiShareForwardLine className="w-[40px] h-[24px] mr-[5px] text-[#606770]"></RiShareForwardLine>
+                <p className="text-[15px]   font-semibold text-[#606770]">Share</p>
+              </button>
+            </div>
           </div>
         </div>
       </div>

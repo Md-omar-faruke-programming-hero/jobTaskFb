@@ -17,7 +17,7 @@ const NavBar = () => {
         <div className="flex items-center md:mr-[25px]">
           <FaFacebook className="text-[#0a80ec] text-[40px] cursor-pointer mr-[8px]"></FaFacebook>
           <input
-            className="p-[10px] md:w-[212px] h-[40px] rounded-[100px] bg-[#f0f2f5] focus:outline-none"
+            className="p-[10px] md:w-[212px] h-[40px] rounded-[100px] bg-[#DADDE1] focus:outline-none placeholder:text-[#65676b]"
             type="text"
             name=""
             id=""
@@ -33,25 +33,25 @@ const NavBar = () => {
               ></AiFillHome>
               <div className="w-[100px] h-[3px] bg-[#0a80ec] absolute top-[48px] left-[0px]"></div>
             </div>
-            <div className="hover:bg-[#f0f2f5] px-[40px] py-[10px] rounded-[10px]">
+            <div className="hover:bg-[#DADDE1] px-[40px] py-[10px] rounded-[10px]">
               <FiMonitor
                 style={{ width: "28px", height: "28px" }}
                 className="text-[#65676b] text-[24px] cursor-pointer mx-auto "
               ></FiMonitor>
             </div>
-            <div className="hover:bg-[#f0f2f5] px-[40px] py-[10px] rounded-[10px]">
+            <div className="hover:bg-[#DADDE1] px-[40px] py-[10px] rounded-[10px]">
               <BsShopWindow
                 style={{ width: "28px", height: "28px" }}
                 className="text-[#65676b] text-[24px] cursor-pointer mx-auto "
               ></BsShopWindow>
             </div>
-            <div className="hover:bg-[#f0f2f5] px-[40px] py-[10px] rounded-[10px]">
+            <div className="hover:bg-[#DADDE1] px-[40px] py-[10px] rounded-[10px]">
               <HiOutlineUserGroup
                 style={{ width: "28px", height: "28px" }}
                 className="text-[#65676b] text-[24px] cursor-pointer mx-auto"
               ></HiOutlineUserGroup>
             </div>
-            <div className="hover:bg-[#f0f2f5] px-[40px] py-[10px] rounded-[10px]">
+            <div className="hover:bg-[#DADDE1] px-[40px] py-[10px] rounded-[10px]">
               <SiFacebookgaming
                 style={{ width: "28px", height: "28px", backgroundColor: "white" }}
                 className="text-[#65676b] text-[24px] bg-white cursor-pointer mx-auto"
