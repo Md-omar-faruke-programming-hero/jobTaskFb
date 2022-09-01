@@ -77,6 +77,7 @@ const MiddleContent = () => {
             <img src={spiderMan} className="w-full h-full" alt="" />
           </div>
           <div className="px-[20px]">
+            {/* showing like,comment and share numbers start*/}
             <div className="flex items-center justify-between  ">
               <div className="flex items-center my-[8px]">
                 <div className="flex items-center mr-[3px]">
@@ -100,8 +101,10 @@ const MiddleContent = () => {
                 </div>
               </div>
             </div>
+            {/* showing like,comment and share numbers end */}
 
-            <hr className="by-[5px]" />
+            <hr className="" />
+            {/* like comment share buttons start*/}
             <div className="grid md:grid-cols-3 gap-0 py-[3px]">
               <button
                 onClick={() => setLike(!like)}
@@ -128,6 +131,43 @@ const MiddleContent = () => {
                 <p className="text-[15px]   font-semibold text-[#606770]">Share</p>
               </button>
             </div>
+            {/* like comment share buttons end */}
+            {/* comment section start */}
+            {false ? (
+              <div>
+                <hr className="pb-[5px]" />
+                <div className="flex items-center mt-[5px]">
+                  <img
+                    src={spiderMan}
+                    alt=""
+                    className="w-[40px] h-[40px] flex justify-center items-center rounded-[100px] mr-[10px]"
+                  />
+                  <input
+                    className="bg-[#f0f2f5] w-full focus:outline-none rounded-[100px] px-[12px] py-[8px]"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Write a comment..."
+                  />
+                </div>
+                <div className="pb-[10px]">
+                  <div className="flex items-center mt-[5px]">
+                    <img
+                      src={spiderMan}
+                      alt=""
+                      className="w-[40px] h-[40px] flex justify-center items-center rounded-[100px] mr-[10px]"
+                    />
+                    <div className="bg-[#f0f2f5] w-[80%] h-auto focus:outline-none rounded-[10px] px-[12px] py-[8px] leading-[20px]">
+                      <p className="font-semibold text-[14px]">Md.Omar Faruke</p>
+                      <p className="font-normal text-[16px]">wish you good luck</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+            {/* comment section end */}
           </div>
         </div>
       </div>
