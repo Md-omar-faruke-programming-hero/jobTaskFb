@@ -32,7 +32,7 @@ const MiddleContent = () => {
     setShareCount(shareCount + 1);
   };
   return (
-    <div className="flex justify-center  pt-[50px] pb-[120px]">
+    <div className="flex justify-center  mt-[15px] pb-[120px]">
       <div>
         <div className="md:w-[500px]  h-[auto] min-w-[auto] max-w-[100%] bg-white px-[15px] py-[10px] rounded-[10px] shadow-sm mb-[10px]">
           <div className="flex items-center">

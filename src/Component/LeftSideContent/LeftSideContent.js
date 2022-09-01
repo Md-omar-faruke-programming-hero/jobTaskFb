@@ -12,7 +12,7 @@ import { AiFillCodepenCircle } from "react-icons/ai";
 import { AiFillCar } from "react-icons/ai";
 const LeftSideContent = () => {
   return (
-    <div className="pl-[15px] mt-[10px] ">
+    <div className="pl-[15px] mt-[10px] scroll ">
       <div className="flex items-center hover:bg-[#DADDE1] pl-[5px] py-[10px] rounded-[10px] cursor-pointer ">
         <img
           src={spiderMan}

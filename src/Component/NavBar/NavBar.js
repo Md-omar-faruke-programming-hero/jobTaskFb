@@ -12,7 +12,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import spiderMan from "../../images/spiderman.jpg";
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-between shadow-md px-[15px] py-[3px]">
+    <div className="flex items-center justify-between shadow-md px-[15px] py-[3px] sticky top-0 bg-white">
       <div className="   flex items-center">
         <div className="flex items-center md:mr-[25px]">
           <FaFacebook className="text-[#0a80ec] text-[40px] cursor-pointer mr-[8px]"></FaFacebook>
