@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import spiderMan from "../../images/spiderman.jpg";
-import { AiOutlineVideoCamera } from "react-icons/ai";
-import { FaPhotoVideo } from "react-icons/fa";
-import { BsEmojiLaughing } from "react-icons/bs";
 import { BsThreeDots } from "react-icons/bs";
 import { RiEarthFill } from "react-icons/ri";
 import { BsHeartFill } from "react-icons/bs";
@@ -15,8 +11,7 @@ import { MdOutlineNoteAlt } from "react-icons/md";
 import swal from "sweetalert";
 import CommentSection from "./CommentSection";
 
-const PostContainer = ({ postdata,postDetails }) => {
-  console.log(postdata?.user?.name, "like");
+const PostContainer = ({ postdata, postDetails }) => {
   // like button function
   const [like, setLike] = useState(false);
   // comment button function
@@ -146,7 +141,7 @@ const PostContainer = ({ postdata,postDetails }) => {
         {/* comment section start */}
         {comentSectionShow ? (
           <div>
-            {postdata?.comments.map((comment,i) => (
+            {postdata?.comments.map((comment, i) => (
               <CommentSection key={i} comment={comment} postDetails={postDetails}></CommentSection>
             ))}
           </div>
@@ -160,4 +155,3 @@ const PostContainer = ({ postdata,postDetails }) => {
 };
 
 export default PostContainer;
-

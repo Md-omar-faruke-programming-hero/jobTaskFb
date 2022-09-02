@@ -1,9 +1,7 @@
 import React from "react";
-
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import { FaPhotoVideo } from "react-icons/fa";
 import { BsEmojiLaughing } from "react-icons/bs";
-
 import PostContainer from "./PostContainer";
 
 const MiddleContent = ({ postDetails }) => {

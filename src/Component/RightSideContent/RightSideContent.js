@@ -4,15 +4,23 @@ import { BsCameraVideoFill } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { BsThreeDots } from "react-icons/bs";
 const RightSideContent = () => {
-  console.log(OnlineFrndList);
   return (
     <div className="pl-[15px] mt-[10px] overflow-y-scroll h-screen ">
       <div className="flex items-center justify-between py-[10px]">
         <div className="text-[#65676B] text-[17px] font-semibold">Contacts</div>
         <div className="flex items-center">
-          <BsCameraVideoFill className="w-[32px] text-[#65676B] mr-[20px] hover:bg-white p-[6px] h-[32px] flex justify-center it rounded-[100px] cursor-pointer" title="New room"></BsCameraVideoFill>
-          <BsSearch className="w-[32px] text-[#65676B] mr-[15px] hover:bg-white p-[6px] h-[32px] flex justify-center it rounded-[100px] cursor-pointer"title="Search by name or group"></BsSearch>
-          <BsThreeDots className="w-[32px] text-[#65676B] mr-[10px] hover:bg-white p-[6px] h-[32px] flex justify-center it rounded-[100px] cursor-pointer"title="Options"></BsThreeDots>
+          <BsCameraVideoFill
+            className="w-[32px] text-[#65676B] mr-[20px] hover:bg-white p-[6px] h-[32px] flex justify-center it rounded-[100px] cursor-pointer"
+            title="New room"
+          ></BsCameraVideoFill>
+          <BsSearch
+            className="w-[32px] text-[#65676B] mr-[15px] hover:bg-white p-[6px] h-[32px] flex justify-center it rounded-[100px] cursor-pointer"
+            title="Search by name or group"
+          ></BsSearch>
+          <BsThreeDots
+            className="w-[32px] text-[#65676B] mr-[10px] hover:bg-white p-[6px] h-[32px] flex justify-center it rounded-[100px] cursor-pointer"
+            title="Options"
+          ></BsThreeDots>
         </div>
       </div>
       {OnlineFrndList.map((list, i) => (
