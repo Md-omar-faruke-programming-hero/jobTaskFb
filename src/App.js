@@ -13,9 +13,7 @@ function App() {
             <Homepage></Homepage>
           </Route>
          
-          <Route exact path="/middle">
-            <MiddleContent></MiddleContent>
-          </Route>
+          
           <Route exact path="/right">
             <RightSideContent></RightSideContent>
           </Route>
