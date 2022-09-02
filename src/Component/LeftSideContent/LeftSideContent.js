@@ -1,5 +1,4 @@
 import React from "react";
-import spiderMan from "../../images/spiderman.jpg";
 import { FaUserFriends } from "react-icons/fa";
 import { HiBookmark } from "react-icons/hi";
 import { HiOutlineUserGroup } from "react-icons/hi";
@@ -21,18 +20,20 @@ import { BsFillCalendarEventFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 import { BsMessenger } from "react-icons/bs";
 import { useState } from "react";
-const LeftSideContent = () => {
+const LeftSideContent = ({ postDetails }) => {
   // see more button function
   const [seemore, setSeeMore] = useState(false);
+  // collect user inforation
+  const userinfo = postDetails[0]?.user;
   return (
     <div className="pl-[15px] mt-[10px] scroll ">
       <div className="flex items-center hover:bg-[#DADDE1] pl-[5px] py-[10px] rounded-[10px] cursor-pointer ">
         <img
-          src={spiderMan}
+          src={userinfo?.profile_picture}
           alt=""
           className="w-[28px] h-[28px] flex justify-center items-center rounded-[100px] mr-[13px] "
         />
-        <p className="text-[15px] font-medium">Md. Omar Faruke</p>
+        <p className="text-[15px] font-medium">{userinfo?.name}</p>
       </div>
       <div className="flex items-center hover:bg-[#DADDE1] pl-[5px] py-[10px] rounded-[10px] cursor-pointer ">
         <FaUserFriends className="w-[28px] h-[28px] text-[#1b84f5] flex justify-center items-center  mr-[13px] "></FaUserFriends>

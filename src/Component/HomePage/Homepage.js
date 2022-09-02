@@ -21,10 +21,10 @@ const Homepage = () => {
       <NavBar postDetails={postDetails}></NavBar>
       <div className="flex  flex-row">
         <div className="basis-1/4 md:block hidden ">
-          <LeftSideContent></LeftSideContent>
+          <LeftSideContent postDetails={postDetails}></LeftSideContent>
         </div>
         <div className="md:basis-1/2 basis-auto overflow-y-scroll h-screen example">
-          <MiddleContent></MiddleContent>
+          <MiddleContent postDetails={postDetails}></MiddleContent>
         </div>
         <div className="basis-1/4 md:block hidden pl-[25px]">
           <RightSideContent></RightSideContent>
