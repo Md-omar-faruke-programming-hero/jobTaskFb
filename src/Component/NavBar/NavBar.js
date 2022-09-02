@@ -9,10 +9,14 @@ import { TbGridDots } from "react-icons/tb";
 import { FaBell } from "react-icons/fa";
 import { BsMessenger } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
-import spiderMan from "../../images/spiderman.jpg";
-const NavBar = () => {
+
+const NavBar = ({ postDetails }) => {
+  const userinfo = postDetails[0]?.user;
   return (
-    <div className="flex items-center justify-between shadow-md px-[15px] py-[3px] sticky top-0 bg-white">
+    <div
+      className="flex items-center justify-between shadow-md px-[15px] py-[3px] z-10
+     sticky top-0 bg-white"
+    >
       <div className="   flex items-center">
         <div className="flex items-center md:mr-[25px]">
           <FaFacebook className="text-[#0a80ec] text-[40px] cursor-pointer mr-[8px]"></FaFacebook>
@@ -79,7 +83,7 @@ const NavBar = () => {
           </div>
           <div>
             <img
-              src={spiderMan}
+              src={userinfo?.profile_picture}
               alt=""
               className="w-[40px] h-[40px] flex justify-center items-center rounded-[100px] "
             />

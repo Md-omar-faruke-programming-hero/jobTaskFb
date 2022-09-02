@@ -1,13 +1,24 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import LeftSideContent from "../LeftSideContent/LeftSideContent";
 import MiddleContent from "../MiddleContent/MiddleContent";
 import NavBar from "../NavBar/NavBar";
 import RightSideContent from "../RightSideContent/RightSideContent";
 
 const Homepage = () => {
+  const [postDetails, setPostDetails] = useState([]);
+
+  // calling dummy post list api
+  useEffect(() => {
+    fetch("PostList.JSON")
+      .then((res) => res.json())
+      .then((data) => setPostDetails(data));
+  }, []);
+
   return (
     <div className="bg-[#f0f2f5]">
-      <NavBar></NavBar>
+      <NavBar postDetails={postDetails}></NavBar>
       <div className="flex  flex-row">
         <div className="basis-1/4 md:block hidden ">
           <LeftSideContent></LeftSideContent>

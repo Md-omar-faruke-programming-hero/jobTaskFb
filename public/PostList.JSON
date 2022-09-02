@@ -1,0 +1,35 @@
+[
+    {
+        "user": {
+          "username": "Md.Omar Faruke",
+          "name": "Md.Omar Faruke",
+          "profile_picture": "https://i.ibb.co/bdbwC7w/spiderman.jpg"
+        },
+        "posts": [
+          {
+            "id": "8402678390264947303",
+            "user": {
+              "username": "Md.Omar Faruke",
+              "name": "Md.Omar Faruke",
+              "profile_picture": "https://i.ibb.co/bdbwC7w/spiderman.jpg"
+            },
+            "posted_on": "1617220982",
+            "likes": 10,
+            "postCaption":"Welcome...",
+            "comments": [
+              {
+                "text": "Wish you good luck",
+                "created_at": "1617220982",
+                "user": {
+                  "username": "Hafiz Shazib",
+                  "name": "Hafiz Shazib",
+                  "profile_picture": "https://i.ibb.co/JRLw1Jd/Ellipse-661.png"
+                }
+              }
+            ]
+          }
+        ]
+      }
+      
+      
+]
