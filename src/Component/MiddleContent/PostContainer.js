@@ -119,7 +119,7 @@ const PostContainer = ({ postdata, postDetails }) => {
             <p className="text-[15px]   font-semibold text-[#606770]">Share</p>
           </button>
           <div
-            className={`bg-white md:w-[360px] h-[120px] rounded-[12px] px-[16px] py-[18px] absolute md:top-[60px] md:right-[-60px] right-[0px] bottom-[-390px]  ${
+            className={`bg-white md:w-[360px] h-[120px] rounded-[12px] px-[16px] py-[18px] absolute md:top-[60px] md:right-[-60px] right-[0px] bottom-[-130px]  ${
               shareSectionshowHide ? "block" : "hidden"
             } `}
           >
