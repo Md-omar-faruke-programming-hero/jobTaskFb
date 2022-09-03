@@ -12,6 +12,8 @@ import swal from "sweetalert";
 import CommentSection from "./CommentSection";
 
 const PostContainer = ({ postdata, postDetails }) => {
+  // collecti user information
+  const userinfo = postDetails[0]?.user;
   // like button function
   const [like, setLike] = useState(false);
   // comment button function
@@ -141,8 +143,23 @@ const PostContainer = ({ postdata, postDetails }) => {
         {/* comment section start */}
         {comentSectionShow ? (
           <div>
+            <hr className="pb-[5px]" />
+            <div className="flex items-center mt-[5px]">
+              <img
+                src={userinfo?.profile_picture}
+                alt=""
+                className="w-[40px] h-[40px] flex justify-center items-center rounded-[100px] mr-[10px]"
+              />
+              <input
+                className="bg-[#f0f2f5] w-full focus:outline-none rounded-[100px] px-[12px] py-[8px]"
+                type="text"
+                name=""
+                id=""
+                placeholder="Write a comment..."
+              />
+            </div>
             {postdata?.comments.map((comment, i) => (
-              <CommentSection key={i} comment={comment} postDetails={postDetails}></CommentSection>
+              <CommentSection key={i} comment={comment} ></CommentSection>
             ))}
           </div>
         ) : (
