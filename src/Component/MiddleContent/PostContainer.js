@@ -159,7 +159,7 @@ const PostContainer = ({ postdata, postDetails }) => {
               />
             </div>
             {postdata?.comments.map((comment, i) => (
-              <CommentSection key={i} comment={comment} ></CommentSection>
+              <CommentSection key={i} comment={comment}></CommentSection>
             ))}
           </div>
         ) : (

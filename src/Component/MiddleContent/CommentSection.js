@@ -7,7 +7,7 @@ const CommentSection = ({ comment }) => {
   return (
     <div>
       <div className="pb-[10px] flex items-center justify-between">
-        <div className="flex items-center mt-[5px]">
+        <div className="flex items-start mt-[5px]">
           <img
             src={comment?.user?.profile_picture}
             alt=""
