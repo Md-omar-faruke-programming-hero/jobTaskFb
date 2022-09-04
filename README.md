@@ -5,10 +5,10 @@ This project was tailwindCSS with [Create React App](https://www-fbook-c0m.netli
 
 ![](src/images/windwScreenShot.PNG)
 
-*Desktop_View
+# Desktop_View
 
 ![](src/images/desktop_view.PNG)
 
-*Mobile Screen_View
+# Mobile Screen_View
 
 ![](src/images/mobileScreen_view.jpeg)
