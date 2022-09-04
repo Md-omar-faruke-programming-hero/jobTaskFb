@@ -7,7 +7,6 @@ import PostContainer from "./PostContainer";
 const MiddleContent = ({ postDetails }) => {
   // collect user information
   const userinfo = postDetails[0]?.user;
-
   return (
     <div className="flex justify-center  mt-[15px] pb-[120px]">
       <div>
