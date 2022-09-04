@@ -63,22 +63,26 @@ const PostContainer = ({ postdata, postDetails }) => {
         <div className="flex items-center justify-between  ">
           <div className="flex items-center my-[8px]">
             <div className="flex items-center mr-[3px]">
-              <div className="  bol  p-[5px] flex justify-center items-center w-[20px] h-[20px] bg-red-600 rounded-[100px]">
-                <BsHeartFill className="text-white     "></BsHeartFill>
+              <div className="p-[5px] flex justify-center items-center md:w-[20px] md:h-[20px] bg-red-600 rounded-[100px]">
+                <BsHeartFill className="text-white"></BsHeartFill>
               </div>
               {like ? (
-                <div className="border-[2px] border-solid border-white ml-[-3px]  p-[2px] flex justify-center items-center w-[20px] h-[20px] bg-[#0882ea] rounded-[100px]">
-                  <MdThumbUpAlt className="text-white     "></MdThumbUpAlt>
+                <div className="border-[2px] border-solid border-white ml-[-3px]  p-[2px] flex justify-center items-center md:w-[20px] md:h-[20px] bg-[#0882ea] rounded-[100px]">
+                  <MdThumbUpAlt className="text-white"></MdThumbUpAlt>
                 </div>
               ) : (
                 ""
               )}
             </div>
-            {like ? <div>You and {postdata?.likes} others</div> : <div> {postdata?.likes} </div>}
+            {like ? (
+              <div className="md:text-[15px] text-[13px]">You and {postdata?.likes} others</div>
+            ) : (
+              <div className="md:text-[15px] text-[13px]"> {postdata?.likes} </div>
+            )}
           </div>
           <div>
             <div className="flex items-center">
-              <p className="mr-[8px]">{postdata?.comments.length} coments</p>
+              <p className="md:mr-[8px] mr-[5px]">{postdata?.comments.length} coments</p>
               <p>{shareCount} shares</p>
             </div>
           </div>
@@ -90,33 +94,33 @@ const PostContainer = ({ postdata, postDetails }) => {
         <div className="grid md:grid-cols-3 grid-cols-3 gap-0 py-[3px] relative">
           <button
             onClick={() => setLike(!like)}
-            className="flex items-center px-[40px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px] mx-[auto]"
+            className="flex items-center justify-center  py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px] "
           >
             {like ? (
               <>
-                <BsHandThumbsUpFill className="w-[24px] h-[24px] mr-[5px] text-[#2078f4]"></BsHandThumbsUpFill>
-                <p className="text-[15px] font-semibold text-[#2078f4]">Like</p>
+                <BsHandThumbsUpFill className="md:w-[24px] md:h-[24px] mr-[5px] text-[#2078f4]"></BsHandThumbsUpFill>
+                <p className="md:text-[15px] text-[13px] font-semibold text-[#2078f4]">Like</p>
               </>
             ) : (
               <>
-                <BsHandThumbsUp className="w-[24px] h-[24px] mr-[5px] text-[#606770]"></BsHandThumbsUp>
-                <p className="text-[15px] font-semibold text-[#606770]">Like</p>
+                <BsHandThumbsUp className="md:w-[24px] md:h-[24px] mr-[5px] text-[#606770]"></BsHandThumbsUp>
+                <p className="md:text-[15px] text-[13px] font-semibold text-[#606770]">Like</p>
               </>
             )}
           </button>
           <button
             onClick={() => setComentSectionShow(true)}
-            className="flex items-center px-[30px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px] mx-[auto]"
+            className="flex items-center justify-center  py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px]"
           >
-            <BiComment className="w-[24px] h-[24px] mr-[5px] text-[#606770]"></BiComment>
-            <p className="text-[15px] font-semibold text-[#606770]">Comment</p>
+            <BiComment className="md:w-[24px] md:h-[24px] mr-[5px] text-[#606770]"></BiComment>
+            <p className="md:text-[15px] text-[13px] font-semibold text-[#606770]">Comment</p>
           </button>
           <button
             onClick={() => setShareSectionshowHide(!shareSectionshowHide)}
-            className="flex items-center px-[20px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px] mx-[auto] "
+            className="flex items-center justify-center  py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px] "
           >
-            <RiShareForwardLine className="w-[40px] h-[24px] mr-[5px] text-[#606770]"></RiShareForwardLine>
-            <p className="text-[15px]   font-semibold text-[#606770]">Share</p>
+            <RiShareForwardLine className="md:w-[40px] md:h-[24px] mr-[5px] text-[#606770]"></RiShareForwardLine>
+            <p className="md:text-[15px] text-[13px]   font-semibold text-[#606770]">Share</p>
           </button>
           <div
             className={`bg-white md:w-[360px] h-[120px] rounded-[12px] px-[16px] py-[18px] absolute md:top-[60px] md:right-[-60px] right-[0px] bottom-[-130px]  ${

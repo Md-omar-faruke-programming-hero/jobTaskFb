@@ -28,17 +28,17 @@ const MiddleContent = ({ postDetails }) => {
           </div>
           <hr className="my-[14px]" />
           <div className="grid md:grid-cols-3 grid-cols-3 ">
-            <div className="flex items-center px-[15px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px]">
-              <AiOutlineVideoCamera className="w-[24px] h-[24px] mr-[5px] text-[#f3425f]"></AiOutlineVideoCamera>
-              <p className="text-[15px] font-semibold text-[#65676b]">Live video</p>
+            <div className="flex items-center justify-center py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px]">
+              <AiOutlineVideoCamera className="md:w-[24px] md:h-[24px] mr-[5px] text-[#f3425f]"></AiOutlineVideoCamera>
+              <p className="md:text-[15px] text-[13px] font-semibold text-[#65676b]">Live video</p>
             </div>
-            <div className="flex items-center px-[15px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px]">
-              <FaPhotoVideo className="w-[24px] h-[24px] mr-[5px] text-[#45bd62]"></FaPhotoVideo>
-              <p className="text-[15px] font-semibold text-[#65676b]">Photo/video</p>
+            <div className="flex items-center justify-center py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px]">
+              <FaPhotoVideo className="md:w-[24px] md:h-[24px] mr-[5px] text-[#45bd62]"></FaPhotoVideo>
+              <p className="md:text-[15px] text-[13px] font-semibold text-[#65676b]">Photo/video</p>
             </div>
-            <div className="flex items-center px-[15px] py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px]">
-              <BsEmojiLaughing className="w-[24px] h-[24px] mr-[5px] text-[#f7b928]"></BsEmojiLaughing>
-              <p className="text-[15px] font-semibold text-[#65676b]">Feeling/activity</p>
+            <div className="flex items-center justify-center py-[10px] hover:bg-[#f0f2f5] cursor-pointer rounded-[10px]">
+              <BsEmojiLaughing className="md:w-[24px] md:h-[24px] mr-[5px] text-[#f7b928]"></BsEmojiLaughing>
+              <p className="md:text-[15px] text-[13px] font-semibold text-[#65676b]">Feeling/activity</p>
             </div>
           </div>
         </div>
